@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0F0F10"/>
+  <g transform="translate(256 256)">
+    <circle r="190" fill="#D7262B"/>
+    <g fill="#F28C28">
+      <rect x="-26" y="-190" width="52" height="62" rx="8"/>
+      <rect x="-26" y="-190" width="52" height="62" rx="8" transform="rotate(45)"/>
+      <rect x="-26" y="-190" width="52" height="62" rx="8" transform="rotate(90)"/>
+      <rect x="-26" y="-190" width="52" height="62" rx="8" transform="rotate(135)"/>
+      <rect x="-26" y="-190" width="52" height="62" rx="8" transform="rotate(180)"/>
+      <rect x="-26" y="-190" width="52" height="62" rx="8" transform="rotate(225)"/>
+      <rect x="-26" y="-190" width="52" height="62" rx="8" transform="rotate(270)"/>
+      <rect x="-26" y="-190" width="52" height="62" rx="8" transform="rotate(315)"/>
+    </g>
+    <circle r="122" fill="#F5EFE0"/>
+    <circle r="122" fill="none" stroke="#D7262B" stroke-width="6" stroke-dasharray="14 12" opacity="0.6"/>
+    <path d="M10 -78c8 30 46 44 46 86 0 34-26 58-58 58s-56-22-56-54c0-22 12-36 22-46 2 16 10 24 20 26-6-28 6-54 26-70z" fill="#D7262B"/>
+    <path d="M2 -8c4 14 20 22 20 40 0 14-10 24-24 24s-22-10-22-22c0-10 6-16 10-20 2 8 6 10 10 10-2-12 0-24 6-32z" fill="#F28C28"/>
+  </g>
+</svg>

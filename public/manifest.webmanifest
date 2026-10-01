@@ -1,0 +1,16 @@
+{
+  "name": "Hot Streak Poker — Host Book",
+  "short_name": "Host Book",
+  "description": "Live buy-ins, cash-outs, expenses and P&L for poker night hosts.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F0F10",
+  "theme_color": "#0F0F10",
+  "icons": [
+    { "src": "brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "brand/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
