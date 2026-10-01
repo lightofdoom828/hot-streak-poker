@@ -9,8 +9,11 @@ _Updated 2026-10-01._
 - Local: `Syndicate Files/hot-streak-poker`. Local-only, gitignored: `SPEC.md`,
   `docs/project-spec.md`, `private/` (go-live steps, setup SQL with the host emails).
 - Phase 1 is built. `npm run verify`: 48 tests pass, build succeeds, CI green.
-- **No database is connected.** The owner's Supabase account was at the free-project limit, so
-  the project has to be created under a new account by the owner.
+- **Database connected 2026-10-02.** The owner created a Supabase project under a new account
+  and ran the setup SQL; the URL and publishable key are repo Variables; run 36875328233
+  deployed. Checked: an anonymous REST request to `nights` returns 42501 permission denied
+  (table exists, RLS/grants hold) and the live login page shows "Email me a sign-in link" with
+  no demo banner. **Not checked: an actual sign-in, a write, or Realtime.** Next action step 3.
 
 ## Next action (owner, then Claude)
 
