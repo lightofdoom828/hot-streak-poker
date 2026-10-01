@@ -9,7 +9,8 @@ export function Wordmark({ stacked = false, className = "" }: { stacked?: boolea
   if (stacked) {
     return (
       <h1 className={`font-display leading-[0.92] text-cream ${className}`}>
-        <span className="block text-7xl text-gold">Hot</span>
+        {/* All cream here: gold on felt is only 3:1, below AA even for display type. */}
+        <span className="block text-7xl">Hot</span>
         <span className="block text-7xl">Streak</span>
         <span className="block text-7xl">Poker</span>
       </h1>
@@ -75,7 +76,7 @@ export function MoneyInput({
         value={value}
         onChange={(e) => onChange(e.target.value.replace(/[^\d.,]/g, ""))}
         placeholder="0"
-        className={`tabular w-full bg-transparent text-text placeholder:text-muted/50 focus:outline-none ${
+        className={`tabular w-full bg-transparent text-text placeholder:text-muted focus:outline-none ${
           large ? "font-display text-4xl" : "text-base"
         }`}
       />

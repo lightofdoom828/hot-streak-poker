@@ -75,12 +75,12 @@ function NightsList() {
       <AppHeader right={<SyncDot status={sync} />} />
       <main className="mx-auto w-full max-w-2xl flex-1 space-y-5 p-4">
         <section className="felt rounded-[1.75rem] p-5" aria-label="Month total">
-          <p className="text-xs font-medium uppercase tracking-wide text-cream/80">Net P&amp;L · {formatMonth(thisMonth)}</p>
+          <p className="text-xs font-medium uppercase tracking-wide text-cream">Net P&amp;L · {formatMonth(thisMonth)}</p>
           <p className="font-display mt-1 text-5xl">
             <Pnl cents={monthTotal} animate className={monthTotal < 0 ? "" : "!text-cream"} />
           </p>
           <div className="betting-line my-3" />
-          <p className="text-sm text-cream/90">
+          <p className="text-sm text-cream">
             {monthCount} {monthCount === 1 ? "night" : "nights"} this month · includes open nights (estimate)
           </p>
         </section>
@@ -94,7 +94,7 @@ function NightsList() {
         ) : nights.length === 0 ? (
           <div className="felt rounded-[1.75rem] p-8 text-center">
             <p className="font-display text-2xl">No nights yet</p>
-            <p className="mt-1 text-sm text-cream/90">Start one when the first player sits down.</p>
+            <p className="mt-1 text-sm text-cream">Start one when the first player sits down.</p>
           </div>
         ) : (
           <ul className="space-y-3">
@@ -113,7 +113,7 @@ function NightsList() {
                       <ChipBadge label={s.players_total} variant={open ? "buyin" : "cashout"} title={`${s.players_total} players`} />
                       <div className="min-w-0 flex-1">
                         <p className="font-display text-xl leading-tight">{formatNightDate(n.date)}</p>
-                        <p className={`truncate text-sm ${open ? "text-cream/90" : "text-muted"}`}>
+                        <p className={`truncate text-sm ${open ? "text-cream" : "text-muted"}`}>
                           {n.venue || "No venue"} · {s.players_total} {s.players_total === 1 ? "player" : "players"}
                         </p>
                       </div>
@@ -123,7 +123,7 @@ function NightsList() {
                         ) : (
                           <Pill tone="muted">Closed</Pill>
                         )}
-                        <p className="mt-1 text-xs opacity-80">{open ? "Est. net P&L" : "Net P&L"}</p>
+                        <p className="mt-1 text-xs">{open ? "Est. net P&L" : "Net P&L"}</p>
                         <p className="text-lg font-semibold">
                           {open ? (
                             <span className="tabular text-cream">{formatCents(s.net_pnl)}</span>

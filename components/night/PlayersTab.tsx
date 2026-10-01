@@ -130,7 +130,7 @@ export function PlayersTab() {
       {rows.length === 0 ? (
         <div className="felt rounded-[1.75rem] p-8 text-center">
           <p className="font-display text-2xl">No players seated yet</p>
-          {!readOnly && <p className="mt-1 text-sm text-cream/90">Add a player to log the first buy-in.</p>}
+          {!readOnly && <p className="mt-1 text-sm text-cream">Add a player to log the first buy-in.</p>}
         </div>
       ) : (
         <ul className="space-y-3">

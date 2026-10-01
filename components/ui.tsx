@@ -126,7 +126,7 @@ export function Field({ label, children, hint }: { label: string; children: Reac
 }
 
 export const inputClass =
-  "w-full min-h-11 rounded-xl border border-rail-border bg-rail px-3 text-base text-text placeholder:text-muted/70 focus:border-gold focus:outline-none";
+  "w-full min-h-11 rounded-xl border border-rail-border bg-rail px-3 text-base text-text placeholder:text-muted focus:border-gold focus:outline-none";
 
 export function Pill({ tone, children }: { tone: "ok" | "pending" | "error" | "muted" | "gold"; children: ReactNode }) {
   const tones = {

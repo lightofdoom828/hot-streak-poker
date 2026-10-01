@@ -24,7 +24,7 @@ function SummaryHeader() {
     <section className="felt rounded-[1.75rem] p-4" aria-label="Night summary">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <p className="text-xs font-medium uppercase tracking-wide text-cream/85">
+          <p className="text-xs font-medium uppercase tracking-wide text-cream">
             {s.revenue_final ? "Book (all cashed out)" : "Book (incl. chips in play)"}
           </p>
           <p
@@ -38,7 +38,7 @@ function SummaryHeader() {
         </div>
         <div className="text-right">
           <p className="font-display text-lg leading-tight">{formatNightDate(night.date)}</p>
-          <p className="text-xs text-cream/85">{night.venue || "No venue"}</p>
+          <p className="text-xs text-cream">{night.venue || "No venue"}</p>
           <p className="mt-1">
             {readOnly ? (
               <span className="inline-flex rounded-full bg-rail px-2 py-0.5 text-xs font-semibold text-cream">Closed</span>
@@ -51,13 +51,13 @@ function SummaryHeader() {
       <div className="betting-line my-3" />
       <dl className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm sm:grid-cols-4">
         <div>
-          <dt className="text-xs text-cream/85">Players</dt>
+          <dt className="text-xs text-cream">Players</dt>
           <dd className="tabular font-semibold">
             {s.players_seated} seated · {s.players_cashed_out} out
           </dd>
         </div>
         <div>
-          <dt className="text-xs text-cream/85">{s.revenue_final ? "Net P&L" : "Net P&L (est.)"}</dt>
+          <dt className="text-xs text-cream">{s.revenue_final ? "Net P&L" : "Net P&L (est.)"}</dt>
           <dd className="font-semibold">
             {s.net_pnl < 0 ? (
               <span className="rounded bg-rail px-1.5 py-0.5">
@@ -69,11 +69,11 @@ function SummaryHeader() {
           </dd>
         </div>
         <div>
-          <dt className="text-xs text-cream/85">Owed to us</dt>
+          <dt className="text-xs text-cream">Owed to us</dt>
           <dd className="tabular font-semibold">{formatCents(s.receivables)}</dd>
         </div>
         <div>
-          <dt className="text-xs text-cream/85">We owe</dt>
+          <dt className="text-xs text-cream">We owe</dt>
           <dd className="tabular font-semibold">{formatCents(s.payables)}</dd>
         </div>
       </dl>
